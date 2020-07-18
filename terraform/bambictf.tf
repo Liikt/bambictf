@@ -245,7 +245,7 @@ ${file("../config/internal_router/moloch.conf")}
 EOF
 systemctl enable wg-quick@internal
 systemctl start wg-quick@internal
-cat <<EOF >> /etc/.ssh/authorized_keys
+cat <<EOF >> /root/.ssh/authorized_keys
 ${file("../config/moloch_keys/moloch_key.pub")}
 EOF
 
